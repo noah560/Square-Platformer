@@ -8,11 +8,9 @@ for message in mid:
         if message.type == "note_on":
             data.append(["n", message.note, message.time])
         elif message.type == "note_off":
-            # Commented out because every note is the same length
-            # data.append(["f", message.note, message.time])
-            pass
+            data.append(["f", message.note, message.time])
 
-# Format: type + milliseconds delay, note
+# Format: type + centiseconds delay, note
 data = [msg[0] + str(int(100*msg[2])) + "," + str(msg[1]) for msg in data]
 
 print("|".join(data))
