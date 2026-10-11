@@ -78,7 +78,7 @@ setInterval(() => {
 
     if (collide()) {
         playY -= playVy;
-        playVy = -0.18 * ~~keys.includes(" ");
+        playVy = -0.18 * ~~(keys.includes(" ") || keys.includes("w"));
         if (collide()) {window.location.reload();}
     }
 
