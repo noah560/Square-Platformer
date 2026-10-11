@@ -1,6 +1,10 @@
 # Square Platformer
 
 This is a simple platformer game that is 3D and infinite!
+You press space to jump and m to mute audio.
+This game uses raycasting for the 3D graphics,
+and the audio is in a midi-style format.
+Terser was used to minify the Javascript code.
 
 ## Building
 Not much to say here, just minify the javascript in
